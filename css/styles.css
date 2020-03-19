@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+.topHead {
+  width: 100%;
+  height: 110px;
+  padding: 10px;
+  margin-bottom: 35px;
+
+}
+
+.topHead h1 {
+  padding-top: 35px;
+  font-size: 30px;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 200;
+  font-size: 18px;
+  color: #70a1ff;
+}
+
+.topHead h1,
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: default;
+
+}
+
+.comments {
+  background: #313840;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.myComment {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.name4,
+.mess {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+  color: #888;
+  padding: 10px 6px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.name4 {
+  float: left;
+  width: 230px;
+}
+
+.mess {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.btn {
+  background: none;
+  color: #70a1ff;
+  border: 1px solid #70a1ff;
+  padding: 12px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.4s linear;
+  cursor: pointer;
+}
+
+.btn1 {
+  margin-right: 20px;
+}
+
+.btn:hover {
+  background-color: #70a1ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.mainComments {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.nameUser {
+  font-weight: 600;
+  width: 100%;
+  margin-bottom: 10px;
+  border-bottom: 1px solid;
+}
+
+.nameUser,
+.messageUser {
+
+  color: white;
+
+}
+
+.messageUser {
+  width: 100%;
+  margin-bottom: 60px;
+
+}
+
+.one_comment {
+  width: 500px;
+  border: 1px solid #70a1ff;
+  padding: 10px 40px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  background-color: #70a1ff;
+  word-wrap: break-word;
+
+}
+
+.cardComment {
+  margin: auto;
+  padding: 0 20px;
+  display: inline-block;
+}
+
+.name_comment {
+  margin: 0 auto;
+}
+
+.feedback {
+  color: black !important;
+  margin-top: 20px;
+  letter-spacing: 4px;
+  font-size: 30px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .name4,
+  .mes {
+    width: 100%;
+  }
+
+  .one_comment {
+    max-width: 600px;
+  }
+}

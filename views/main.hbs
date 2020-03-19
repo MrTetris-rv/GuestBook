@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+
+<body>
+  <div class="topHead">
+    <h1>Guest book</h1>
+    <h3>Leave your message!</h3>
+  </div>
+  <div class="main">
+    <div class="comments">
+      <div class="myComment">
+        <form name="form" method="POST" action="/addComment">
+          <input type="text" name="name" placeholder="Ваше имя" class="name4">
+          <textarea name="comment" rows="1" placeholder="Ваше сообщение" class="mess"></textarea>
+          <input type="submit" value="Отправить" name="submit" class="btn btn1">
+          <input type="reset" value="Очистить" class="btn">
+        </form>
+      </div>
+    </div>
+
+
+    <h3 class="feedback">Messages:</h3>
+
+    <div class="mainComments">
+      <div class="cardComment">
+
+        <div class="name_comment">
+          {{#if allComments}}
+          {{#each allComments}}
+          <div class="one_comment animated jackInTheBox slow delay-16s">
+            <div class="nameUser">{{this.name}}</div>
+            <div class="messageUser">{{this.comment}}</div>
+          </div>
+          {{/each}}
+          {{/if}}
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+</body>
+
+</html>
