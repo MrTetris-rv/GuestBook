@@ -7,18 +7,8 @@ const {
 const router = Router();
 
 
-// router.get('/', async (req, res) => {
-//   const com = await Comment({});
-//   Comment.find().then((allComments) => {
-//     res.render('index', {
-//       allComments
-//     });
-//   });
-// });
 router.get('/', (req, res) => {
-  // выгружаем все записи из БД
   Comment.find().then((allComments) => {
-    // рендерим
     res.render('main.hbs', {
       allComments
     });
